@@ -37,3 +37,27 @@ function removeEventProperty(attendee) {
 function addCheckedInProperty(attendee) {
   attendee.checkedIn = true;
 }
+
+
+console.log("Original attendee:");
+console.log(attendee);
+
+console.log("\nTesting log functions:");
+logAttendeeName(attendee);
+logTicketPrice(attendee);
+
+console.log("\nUpdating ticket type:");
+updateTicketType(attendee, "General Admission");
+console.log(attendee.ticketType);
+
+console.log("\nUpdating ticket price:");
+updateTicketPrice(attendee, 100);
+console.log(attendee.ticketPrice);
+
+console.log("\nRemoving event property:");
+removeEventProperty(attendee);
+console.log(attendee);
+
+console.log("\nAdding checkedIn property:");
+addCheckedInProperty(attendee);
+console.log(attendee);
